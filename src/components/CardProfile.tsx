@@ -16,9 +16,9 @@ function ProfileCard({ name, title, github, imageUrl, age, university, course }:
             <img src={imageUrl} alt={`foto do card ${name}`} className="card-img"/>
             <h2>{name}</h2>
             <p><strong>Titulo:</strong> {title} </p>
-             <p><strong>Idade:</strong> {age}</p>
-             <p><strong>Universidade:</strong> {university}</p>
-             <p><strong>Curso:</strong> {course}</p>
+            {age && <p><strong>Idade:</strong> {age}</p>}
+            {university && <p><strong>Universidade:</strong> {university}</p>}
+            {course && <p><strong>Curso:</strong> {course}</p> }
             <a href={github} target="_blank">
                 <button className="button-github">Github</button>
             </a>
