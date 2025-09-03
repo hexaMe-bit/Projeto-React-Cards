@@ -14,21 +14,24 @@ function App() {
       age: 19,
       university: 'Universidade Luterana do Brasil',
       course: 'Ciência da Computação',
-      github: 'https://github.com/hexaMe-bit' 
+      github: 'https://github.com/hexaMe-bit',
+      time: 'Flamengo' 
     },
     {
       id: 2,
       imageUrl: 'https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png',
       name: 'Lucas Leal',
       title: 'Lucassssssss Lucasssss é do tottenham  tinha que ser você Lucassss',
-      github: 'https://github.com/Luckleal' 
+      github: 'https://github.com/Luckleal',
+      time: 'Fluminense' 
     },
     {
       id: 3,
       imageUrl: 'https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png',
       name: 'Jonas Gabriel',
       title: 'Goooooooool é do corinthians gui negão, saiu do terrão para decidir o jogo',
-      github: 'https://github.com/jonasssgabriel'
+      github: 'https://github.com/jonasssgabriel',
+      time: 'Corinthians'
     }
   ];
 
@@ -45,6 +48,7 @@ function App() {
               name={profile.name}
               imageUrl={profile.imageUrl}
               title={profile.title}
+              time = {profile.time}
               github={profile.github}
               age={profile.age}
               university={profile.university}
@@ -56,7 +60,9 @@ function App() {
               name={profile.name}
               imageUrl={profile.imageUrl}
               title={profile.title}
+              time = {profile.time}
               github={profile.github}
+              
             />
             )
           )
